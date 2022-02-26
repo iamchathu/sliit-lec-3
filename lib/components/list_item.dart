@@ -18,7 +18,7 @@ class ListItem extends StatelessWidget {
             Icons.verified_user,
             color: Theme.of(context).primaryColor,
           ),
-          SizedBox(
+          const SizedBox(
             width: 10,
           ),
           Text(

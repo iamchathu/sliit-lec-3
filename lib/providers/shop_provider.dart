@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-class ShopManager extends ChangeNotifier {
+class ShopProvider extends ChangeNotifier {
   int _qty = 0;
 
   int get qty => _qty;
@@ -15,5 +15,10 @@ class ShopManager extends ChangeNotifier {
       _qty--;
       notifyListeners();
     }
+  }
+
+  void reset() {
+    _qty = 0;
+    notifyListeners();
   }
 }

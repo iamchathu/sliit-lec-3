@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lec_3/components/layout.dart';
 
 class About extends StatelessWidget {
-  static String routeName = '/about';
+  static const String routeName = '/about';
   const About({Key? key}) : super(key: key);
 
   @override
@@ -11,12 +11,12 @@ class About extends StatelessWidget {
       title: "About",
       body: Column(
         children: [
-          Text("About "),
+          const Text("About "),
           OutlinedButton(
             onPressed: () {
               Navigator.of(context).pop();
             },
-            child: Text("Home"),
+            child: const Text("Home"),
           )
         ],
       ),

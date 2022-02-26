@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:lec_3/providers/shop_provider.dart';
 import 'package:lec_3/screens/about.dart';
 import 'package:lec_3/screens/home.dart';
 import 'package:lec_3/screens/shop.dart';
-import 'package:lec_3/shop_provider.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (context) => ShopManager(),
+      create: (context) => ShopProvider(),
       child: MaterialApp(
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
